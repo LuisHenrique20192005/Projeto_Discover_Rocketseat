@@ -25,7 +25,7 @@
     --switch-bg-url: url(Sun.svg);
 }
 
-body{
+body * {
     /*
     background-image: url(./bg-mobile.jpg);
     background-repeat: no-repeat;
@@ -33,13 +33,13 @@ body{
     background-size: cover;
     */
 
-    /* background: image repeat position / size */
+    /* background: image repeat position / size */ 
+    
     background: var(--bg-url) no-repeat top center/cover;
-}
-
-body * {
     font-family: 'Inter', sans-serif;
     color: var(--text-color);
+    height: 100vh;
+
 }
 
 #container{
@@ -155,3 +155,16 @@ footer{
     text-align: center;
     font-size: 14px;
 }
+
+/* media queries */
+@media (min-width: 700px){
+    :root{
+        --bg-url: url(./rocketseat/bg-desktop.jpg);
+        }
+    .light{
+        --bg-url: url(.rocketseat/bg-desktop-light.jpg);
+        }
+    }
+
+
+
