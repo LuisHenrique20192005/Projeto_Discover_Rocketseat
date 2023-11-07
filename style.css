@@ -55,7 +55,10 @@ body{
 }
 
 #profile img{
-    width: 112px;
+        width: 120px; /* Defina a largura desejada para a imagem */
+        height: 120px; /* Defina a altura desejada para a imagem */
+        border-radius: 50%; /* Torna a imagem redonda */
+        object-fit: cover; /* Mantém a proporção da imagem, preenchendo o círculo */
 }
 
 #profile p{
@@ -153,7 +156,7 @@ ul li a:hover{
 }
 
 footer{
-    padding: 24px 0;
+    padding: 15px 0;
     text-align: center;
     font-size: 14px;
 }
